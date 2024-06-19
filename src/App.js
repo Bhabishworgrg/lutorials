@@ -2,6 +2,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavigationPane from './components/NavigationPane';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import IntroductionToGit from './pages/IntroductionToGit';
+import BranchesInGit from './pages/BranchesInGit';
+import './styles/App.css';
+import AddingYourChangesToGithub from './pages/AddingYourChangesToGithub';
 import './styles/App.css';
 
 function App() {
@@ -18,7 +23,10 @@ function App() {
           <div className='col content overflow-auto'>
             <div className='p-5'>
               <Routes>
-                {/* <Route path='/page-name' element={<Page />} /> */}
+                <Route path='/' element={<Home />} />
+                <Route path='/introduction-to-git' element={<IntroductionToGit />} />
+                <Route path='/branches-in-git' element={<BranchesInGit />} />
+                <Route path='/adding-your-changes-to-github' element={<AddingYourChangesToGithub />} />
               </Routes>
             </div>
             <Footer />

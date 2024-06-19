@@ -7,6 +7,9 @@ const NavigationPane = () => {
         <div className='nav-pane'>
             <ul className='list-unstyled'>
                 <li><Link to='/'>Home</Link></li>
+                <li><Link to='/introduction-to-git'>Introduction to Git</Link></li>
+                <li><Link to='/branches-in-git'>Branches in Git</Link></li>
+                <li><Link to='/adding-your-changes-to-github'>Adding your changes to Github</Link></li>
             </ul>
         </div>
     );
