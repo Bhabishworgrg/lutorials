@@ -1,0 +1,6 @@
+.nav-pane {
+    background-color: #25282b;
+    height: calc(100vh - 93px);
+    width: 23vw;
+    padding: 1vw 2vw;
+}
