@@ -1,11 +1,10 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import NavigationPane from './components/NavigationPane';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import IntroductionToGit from './pages/IntroductionToGit';
 import BranchesInGit from './pages/BranchesInGit';
-import './styles/App.css';
 import AddingYourChangesToGithub from './pages/AddingYourChangesToGithub';
 import './styles/App.css';
 
@@ -29,6 +28,7 @@ function App() {
                 <Route path='/lutorials/adding-your-changes-to-github/' element={<AddingYourChangesToGithub />} />
               </Routes>
             </div>
+            
             <Footer />
           </div>
         </div>
