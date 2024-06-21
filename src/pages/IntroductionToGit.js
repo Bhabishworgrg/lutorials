@@ -1,13 +1,13 @@
 import React from 'react';
 import DownloadButton from '../components/DownloadButton';
-import { Link } from 'react-router-dom';
+import OutsideLink from '../components/OutsideLink';
 
 const IntroductionToGit = () => {
   return (
     <div>
       <h1>Introduction to Git</h1>      
       
-      <p>Git is a <a href='https://www.geeksforgeeks.org/version-control-systems/' target='_blank' class='outside-link'>Version Control System (VCS)</a> that helps in managing changes to the files over time. Git keeps track of what changes were made to our files. It can tell us what lines were added, removed, or modified. We can also go back in time to any previous snapshot and see how our files looked at that point.</p>
+      <p>Git is a <OutsideLink link={ 'https://www.geeksforgeeks.org/version-control-systems/' } title={ 'Version Control System (VCS)' } /> that helps in managing changes to the files over time. Git keeps track of what changes were made to our files. It can tell us what lines were added, removed, or modified. We can also go back in time to any previous snapshot and see how our files looked at that point.</p>
 
       <DownloadButton name='Pro Git' link='https://github.com/progit/progit2/releases/download/2.1.430/progit.pdf' />
 

@@ -17,7 +17,8 @@ const CodeBlock = ({ code, language }) => {
       </Prism>
 
       <div style={{ gridArea: '1/2' }}>
-        { isHovering && <button className='copyButton' onClick={() => navigator.clipboard.writeText(code)} >
+        { isHovering && 
+        <button className='copyButton' onClick={() => navigator.clipboard.writeText(code)} >
           <FontAwesomeIcon icon={ faCopy } />
         </button> }
       </div>

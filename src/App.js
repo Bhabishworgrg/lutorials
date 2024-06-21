@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import IntroductionToGit from './pages/IntroductionToGit';
 import BranchesInGit from './pages/BranchesInGit';
 import AddingYourChangesToGithub from './pages/AddingYourChangesToGithub';
+import IntroductionToGodot from './pages/IntroductionToGodot';
 import './styles/App.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
                 <Route path='/introduction-to-git/' element={<IntroductionToGit />} />
                 <Route path='/branches-in-git/' element={<BranchesInGit />} />
                 <Route path='/adding-your-changes-to-github/' element={<AddingYourChangesToGithub />} />
+                <Route path='/introduction-to-godot/' element={<IntroductionToGodot />} />
               </Routes>
             </div>
 

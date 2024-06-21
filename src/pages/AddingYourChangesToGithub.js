@@ -13,6 +13,7 @@ const AddingYourChangesToGithub = () => {
       
       <p>
         In VS Code, unstaged files are marked with <span style={{color: '#baa081'}}>M</span>(Modified), <span style={{color: '#68a589'}}>U</span>(Untracked) or <span style={{color: '#a64b47'}}>D</span>(Deleted).
+        
         <Image name='unstagedFiles.png' />
       </p>
       
@@ -20,7 +21,9 @@ const AddingYourChangesToGithub = () => {
       
       <p>
         Firstly, we will add the files to the staging area so they can be included in the next commit.
+        
         <CodeBlock code={ `git add .` } language={ 'shell' } />
+        
         '.' indicates that we are adding all the files.
       </p>
 
@@ -30,7 +33,9 @@ const AddingYourChangesToGithub = () => {
 
       <p>
         The following command commits all the Staged Changes.
+        
         <CodeBlock code={ `git commit -m "Add xyz feature"` } language={ 'shell' } />
+        
         '-m' lets us leave a message describing the commit.
       </p>
       
@@ -40,7 +45,9 @@ const AddingYourChangesToGithub = () => {
 
       <p>
         To push our commit, we will use this command.
+        
         <CodeBlock code={ `git push origin branch-name` } language={ 'shell' } />
+        
         'origin' indicates remote repository where the branch will be pushed.
       </p>
     </div>
