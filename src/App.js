@@ -22,13 +22,13 @@ function App() {
           <div className='col content overflow-auto'>
             <div className='p-5'>
               <Routes>
-                <Route path='/lutorials/' element={<Home />} />
-                <Route path='/lutorials/introduction-to-git/' element={<IntroductionToGit />} />
-                <Route path='/lutorials/branches-in-git/' element={<BranchesInGit />} />
-                <Route path='/lutorials/adding-your-changes-to-github/' element={<AddingYourChangesToGithub />} />
+                <Route path='/' element={<Home />} />
+                <Route path='/introduction-to-git/' element={<IntroductionToGit />} />
+                <Route path='/branches-in-git/' element={<BranchesInGit />} />
+                <Route path='/adding-your-changes-to-github/' element={<AddingYourChangesToGithub />} />
               </Routes>
             </div>
-            
+
             <Footer />
           </div>
         </div>
