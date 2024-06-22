@@ -31,3 +31,8 @@ a:hover {
     border-radius: 50%;
     background-color: #e8e3e3;
 }
+
+iframe {
+    width: 100%;
+    aspect-ratio: 783/440;
+}

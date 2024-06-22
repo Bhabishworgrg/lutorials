@@ -14,7 +14,7 @@ const AddingYourChangesToGithub = () => {
       <p>
         In VS Code, unstaged files are marked with <span style={{color: '#baa081'}}>M</span>(Modified), <span style={{color: '#68a589'}}>U</span>(Untracked) or <span style={{color: '#a64b47'}}>D</span>(Deleted).
         
-        <Image name='unstagedFiles.png' />
+        <Image name='unstaged_files.png' />
       </p>
       
       <h3>2. Adding Files</h3>

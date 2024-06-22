@@ -7,7 +7,7 @@ const Header = () => {
     <header className='container-fluid py-2 px-4'>
       <div className='row'>
         <Link className='col-auto' to='/'>
-            <img src={`${process.env.PUBLIC_URL}/logo192.png`} />
+            <img className='header-logo' src={`${process.env.PUBLIC_URL}/logo192.png`} />
         </Link>
 
         <div className='col'>

@@ -11,16 +11,18 @@ const CodeBlock = ({ code, language }) => {
   const handleMouseOut = () => setIsHovering(false);
 
   return (
-    <div style={{ display: 'grid' }} onMouseOver={ handleMouseOver } onMouseOut={ handleMouseOut }>
-      <Prism language={ language } style={ cb } >
-        { code }
-      </Prism>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ display: 'grid' }} onMouseOver={ handleMouseOver } onMouseOut={ handleMouseOut }>
+        <Prism language={ language } style={ cb } >
+          { code }
+        </Prism>
 
-      <div style={{ gridArea: '1/2' }}>
-        { isHovering && 
-        <button className='copyButton' onClick={() => navigator.clipboard.writeText(code)} >
-          <FontAwesomeIcon icon={ faCopy } />
-        </button> }
+        <div style={{ gridArea: '1/2' }}>
+          { isHovering && 
+          <button className='copyButton' onClick={() => navigator.clipboard.writeText(code)} >
+            <FontAwesomeIcon icon={ faCopy } />
+          </button> }
+        </div>
       </div>
     </div>
   );
