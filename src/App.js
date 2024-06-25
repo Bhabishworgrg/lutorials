@@ -17,11 +17,11 @@ function App() {
       
       <div className='container-fluid'>
         <div className='row'>
-          <div className='col-auto p-0'>
+          <div className='col-lg-3 col-md-3 col-sm-3 overflow-auto p-0'>
             <NavigationPane />
           </div>
           
-          <div className='col content overflow-auto'>
+          <div className='col-lg-9 col-md-9 col-sm-9 content overflow-auto'>
             <div className='p-5'>
               <Routes>
                 <Route path='/' element={<Home />} />

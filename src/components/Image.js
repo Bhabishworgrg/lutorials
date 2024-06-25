@@ -22,7 +22,7 @@ const Image = ({ name }) => {
   }, []);
 
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div style={{ textAlign: 'center' }} className='pb-5'>
       <img ref={ imgRef }
       src={ `${process.env.PUBLIC_URL}/assets/images/${name}` }
       style={{ width: newWidth ? `${newWidth}px` : 'auto', maxWidth: '100%' }}

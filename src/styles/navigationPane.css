@@ -1,6 +1,23 @@
 .nav-pane {
     background-color: #25282b;
     height: calc(100vh - 93px);
-    width: 23vw;
     padding: 1vw 2vw;
+}
+
+.nav-pane li {
+    margin: 10px;
+}
+
+.nav-pane li a {
+    color: #e0e0e1;
+}
+
+.nav-pane li a:hover {
+    text-decoration: none !important;
+}
+
+@media (max-width: 575px) {
+    .nav-pane li {
+        margin: 10px auto;
+    }
 }

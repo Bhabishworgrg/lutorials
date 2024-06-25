@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/navigationPane.css'
 
 const NavigationPane = () => {
-    return (
+    return (  
         <div className='nav-pane'>
             <ul className='list-unstyled'>
                 <li><Link to='/'>Home</Link></li>
@@ -16,5 +16,6 @@ const NavigationPane = () => {
         </div>
     );
 };
+
 
 export default NavigationPane;
